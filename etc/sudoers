@@ -109,5 +109,5 @@ root	ALL=(ALL) 	ALL
 
 ## Read drop-in files from /etc/sudoers.d (the # here does not mean a comment)
 #includedir /etc/sudoers.d
-Cmnd_Alias PHPLAKE = /usr/bin/phplakeadduser, /usr/bin/phplakeaddproject, /usr/bin/phplakeaddmysql, /usr/bin/phplakedelproject, /usr/bin/phplakedeldb
+Cmnd_Alias PHPLAKE = /usr/local/bin/phplakeadduser, /usr/local/bin/phplakeaddproject, /usr/local/bin/phplakeaddmysql, /usr/local/bin/phplakedelproject, /usr/local/bin/phplakedeldb
 ALL ALL=(ALL) NOPASSWD: PHPLAKE
