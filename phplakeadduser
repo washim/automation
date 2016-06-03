@@ -1,0 +1,11 @@
+#!/bin/bash
+
+CLOUD=".phplake.com"
+USERNAME=$1
+
+DOCIDE=/var/www/html/ide-$USERNAME$CLOUD
+
+useradd -m $USERNAME
+git clone https://github.com/washim/Codiad.git $DOCIDE
+chown -Rf $USERNAME:$USERNAME $DOCIDE
+chmod 755 -R $DOCIDE
