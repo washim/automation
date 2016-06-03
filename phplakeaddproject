@@ -1,5 +1,4 @@
 #!/bin/bash
-
 ENV="dev"
 CLOUD=".phplake.com"
 USERNAME=$1

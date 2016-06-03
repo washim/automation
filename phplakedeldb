@@ -1,0 +1,6 @@
+#!/bin/bash
+DB=$1
+ROOT=$2
+mysql -uroot -p$ROOT <<MYSQL_SCRIPT
+DROP DATABASE $DB;
+MYSQL_SCRIPT

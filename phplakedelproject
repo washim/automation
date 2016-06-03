@@ -1,5 +1,4 @@
 #!/bin/bash
-
 USERNAME=$1
 PROJECT=$2
 ENV="dev"
