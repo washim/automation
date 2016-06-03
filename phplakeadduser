@@ -6,5 +6,6 @@ DOCIDE=/var/www/html/ide-$USERNAME$CLOUD
 
 useradd -m $USERNAME
 git clone https://github.com/washim/Codiad.git $DOCIDE
+rm -rf $DOCIDE/.git
 chown -Rf $USERNAME:$USERNAME $DOCIDE
 chmod 755 -R $DOCIDE
