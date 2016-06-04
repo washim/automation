@@ -1,11 +1,8 @@
 #!/bin/bash
-ENV="dev"
-CLOUD=".phplake.com"
 USERNAME=$1
-PROJECT=$2
-URL=$3
-DOCROOT=/var/www/html/$ENV-$PROJECT-$USERNAME$CLOUD
-DOCIDE=/var/www/html/ide-$USERNAME$CLOUD
+DOCROOT=/var/www/html/$2
+DOCIDE=/var/www/html/$3
+URL=$4
 
 git clone $URL $DOCROOT
 chown -Rf $USERNAME:$USERNAME $DOCROOT

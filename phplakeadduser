@@ -1,9 +1,7 @@
 #!/bin/bash
-CLOUD=".phplake.com"
 USERNAME=$1
-
-DOCIDE=/var/www/html/ide-$USERNAME$CLOUD
-
+DOCFOLDER=$2
+DOCIDE=/var/www/html/$DOCFOLDER
 useradd -m $USERNAME
 git clone https://github.com/washim/Codiad.git $DOCIDE
 rm -rf $DOCIDE/.git
